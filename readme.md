@@ -1,3 +1,5 @@
+(Next term: [Spring 2016](https://github.com/elvinyung/1165notes))
+
 # 1151notes
 ### by [Elvin Yung](https://github.com/elvinyung)
 
