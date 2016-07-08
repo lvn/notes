@@ -15,3 +15,6 @@ The [slides](https://www.student.cs.uwaterloo.ca/~cs349/s16/schedule.shtml) are 
 * [7.3 - History](7-3.md) - a brief history of interaction, visionaries, speculations on the future
 * [8.1 - Android](8-1.md) - intro to Android, architecture, activities, layouting with XML
 * [8.2 - Touch Interfaces](8-2.md) - look and feel, interaction instruments, temporal and spatial activation, degrees of indirection, integration, and compatibility
+* [9.2 - Touchless Interfaces](9-1.md) - voice, in-air gestures, classifying/interpreting ambiguous command data
+* [10.1 - Wearables](10-1.md) - Smartwatches, ubiquitous computing, augmented reality
+* [10.2 - Input](10-2.md) - Different types of input (text, positional, gestural)
