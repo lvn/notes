@@ -18,3 +18,6 @@ The [slides](https://www.student.cs.uwaterloo.ca/~cs349/s16/schedule.shtml) are 
 * [9.2 - Touchless Interfaces](9-1.md) - voice, in-air gestures, classifying/interpreting ambiguous command data
 * [10.1 - Wearables](10-1.md) - Smartwatches, ubiquitous computing, augmented reality
 * [10.2 - Input](10-2.md) - Different types of input (text, positional, gestural)
+* [11.1 - Input Performance](11-1.md) - KLM, Fitts' Law, Steering Law, visual space and motor space
+* [11.2 - Accessibility](11-2.md) - different types of ableness, accessibility tools, UI design considerations
+* [12.1 - Visual Perception](12-1.md) - psychophysics, temporal resolution, spatial resolution, color spectrum, color perception and blindness, displays
