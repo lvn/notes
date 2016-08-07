@@ -22,3 +22,4 @@ The [slides](https://www.student.cs.uwaterloo.ca/~cs349/s16/schedule.shtml) are 
 * [11.2 - Accessibility](11-2.md) - different types of ableness, accessibility tools, UI design considerations
 * [12.1 - Visual Perception](12-1.md) - psychophysics, temporal resolution, spatial resolution, color spectrum, color perception and blindness, displays
 * [12.2 - Cognition](12-2.md) - memory (short term, long term), perception (by experience, by context, by goals), cognition, locus, context switches, automatic actions
+* [13.1 - Ethics](13-1.md) - benevolent vs. malevolent deception, gaps for deceptive design, experimentation
