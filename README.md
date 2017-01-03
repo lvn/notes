@@ -4,8 +4,8 @@
 This repo has all of my university notes, and some tooling for managing them.
 
 ## Table of Contents
-* [Winter 2015](./1511)
-* [Spring 2016](./1165)
+* [Winter 2015](https://github.com/elvinyung/notes/tree/master/1151)
+* [Spring 2016](https://github.com/elvinyung/notes/tree/master/1165)
 
 ## Why?
 I originally kept my university notes as separate repos for each term, but found that to be too annoying.
