@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Hacky script that creates a new note file, and opens it in atom.
+
+unquote() {
+  echo $@ | tr -d "\""
+}
+
+uppercase() {
+  echo $@ | tr '[a-z]' '[A-Z]'
+}
+
+course_info_fmt() {
+  course_subject=$(echo $1 | egrep -o "[a-z]+" -)
+  course_catalog_number=$(echo $1 | egrep -o "\d+" -)
+  course_info=$(curl "https://api.uwaterloo.ca/v2/courses/$course_subject/$course_catalog_number.json?key=$UW_API_KEY" 2>/dev/null)
+  course_title=$(unquote $(echo $course_info | jq .data.title))
+  echo "$(uppercase $course_subject) $course_catalog_number - $(unquote $(echo $course_info | jq .data.title))"
+}
+
+format_notes() {
+  echo "# $1"
+  echo
+  echo $2
+  echo
+  echo $3
+  echo
+  echo $NAME
+}
+
+# load config
+source ./config.cfg
+
+# read arguments
+course_name=$1
+course_info=$(course_info_fmt $course_name)
+shift
+note_date=$(date -j "+%m-%d-%Y")
+note_path="./$TERM/$course_name/$1.md"
+shift
+note_title=$@
+
+# do the thing
+format_notes "$note_title" "$course_info" "$note_date" > $note_path
+atom $note_path
