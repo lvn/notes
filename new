@@ -38,7 +38,9 @@ shift
 note_date=$(date -j "+%m-%d-%Y")
 note_path="./$TERM/$course_name/$1.md"
 shift
-note_title=$@
+note_title="$@"
+
+[[ -e $note_path ]] && exit 3
 
 # do the thing
 format_notes "$note_title" "$course_info" "$note_date" > $note_path
